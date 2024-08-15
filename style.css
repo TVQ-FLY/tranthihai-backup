@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    cursor: url(Image/iconmonstr-heart-filled.svg), auto;
+}
+
+.image-container {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px 2px #ffffff,
+            0 8px 32px 4px #ffffff;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}

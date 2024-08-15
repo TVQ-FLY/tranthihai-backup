@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
+    <script src="https://kit.fontawesome.com/1ce1030c77.js" crossorigin="anonymous"></script>
+    <!-- Taiwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon -->
+    <link href="Image/favicon.ico" rel="icon">
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>My Love</title>
+</head>
+
+<body>
+    <div id="content" class="content-body bg-pink-300 cursor"">
+        <div class="navbar bg-pink-500">
+            <marquee id="welcome" scrollamount="10" class="pt-[12px] pb-[10px] font-bold text-2xl text-white">CHÀO MỪNG CÁC BẠN ĐÃ ĐẾN VỚI WEBSITE CỦA MÌNH
+                !!!</marquee>
+        </div>
+        <div class="button-logo flex justify-center my-3">
+            <a href="#about"><button type="button"
+                class="bg-yellow-400 shadow-lg shadow-yellow-500/50 mx-3 py-3 px-11 font-bold text-xl text-white hover:scale-110">Logo</button></a>
+        </div>
+        <div class="logo grid justify-center items-center sm:flex m-w[100px]">
+            <div class="image-logo flex my-2">
+                <img src="Image/Logo.png" alt="" class="mx-2 min-w-[50px] max-w-[150px]">
+                <img src="Image/logo-black-number.png" alt="" class="mx-2 min-w-[50px] max-w-[150px]">
+            </div>
+            <div class="image-logo flex my-2">
+                <img src="Image/logo-number.png" alt="" class="mx-2 min-w-[50px] max-w-[150px]">
+                <img src="Image/Logo-black.png" alt="" class="mx-2 min-w-[50px] max-w-[150px]">
+            </div>
+        </div>
+        <div class="profile-all flex justify-center items-center shadow-gray-50">
+            <div class="button-profile hidden sm:flex justify-center mt-3">
+                <a href="#about"><button type="button"
+                        class="bg-blue-500 shadow-lg shadow-blue-500/50 mx-3 py-3 px-11 font-bold text-xl text-white hover:scale-110">About</button></a>
+                <a href="#icon"><button type="button"
+                        class="bg-red-500 shadow-lg shadow-red-500/50 mx-3 py-3 px-11 font-bold text-xl text-white hover:scale-110">Profile</button></a>
+                <a href="#photo"><button type="button"
+                        class="bg-green-500 shadow-lg shadow-green-500/50 mx-3 py-3 px-11 font-bold text-xl text-white hover:scale-110">Image</button></a>
+            </div>
+        </div>
+        <div id="about" class="about text-center mt-3">
+            <button type="button"
+                class="bg-blue-500 shadow-lg shadow-blue-500/50 m-3 px-11 py-3 font-bold text-xl hover:scale-110">
+                <h1 class=""><span class="auto-text1 text-white">About</h1>
+            </button>
+            <h2 class="font-bold text-red-600 text-3xl mt-3">Trần Thị Hải</h2>
+            <h2 class="font-bold text-red-600 text-2xl mt-2">2004 - K63</h2>
+            <h2 class="font-bold text-red-600 text-2xl mt-2">GDTH - Đại học Vinh</h2>
+            <h2 class="font-bold text-red-600 text-2xl mt-2">Yên Thành - Nghệ An</h2>
+        </div>
+
+        <div id="icon" class="icon-text text-center mt-4">
+            <button type="button"
+                class="bg-red-500 shadow-lg shadow-red-500/50 m-3 px-11 py-3 font-bold text-xl hover:scale-110">
+                <h1><span class="auto-text2 text-center text-white">Profile</h1>
+            </button>
+            <div class=" icon-about justify-center mx-auto max-w-[80%] mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="fb my-4">
+                    <a href="https://www.facebook.com/hai.tranthi.75033/"><i
+                            class="fa-brands fa-facebook text-9xl mb-2 text-blue-600"></i></a>
+                    <p class="font-bold text-xl text-red-600">Facebook</p>
+                </div>
+                <div class="tiktok my-4">
+                    <a href="https://www.tiktok.com/@_haritr"><i
+                            class="fa-brands fa-tiktok text-9xl mb-2 text-black"></i></a>
+                    <p class="font-bold text-xl text-red-600">Tiktok</p>
+                </div>
+                <div class="insta my-4">
+                    <a href="https://www.instagram.com/_haritr/"><i
+                            class="fa-brands fa-instagram text-9xl mb-2 text-orange-700"></i></a>
+                    <p class="font-bold text-xl text-red-600">Instagram</p>
+                </div>
+                <div class="youtube my-4">
+                    <a href="https://www.youtube.com/channel/UCPAcdfAVNhvEaTxdyOwHlqQ"><i
+                            class="fa-brands fa-youtube text-9xl mb-2 text-red-600"></i></a>
+                    <p class="font-bold text-xl text-red-600">Youtube</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="photo" class="photo-text text-center mt-4">
+            <button type="button"
+                class="bg-green-500 shadow-lg shadow-green-500/50 px-11 py-3 font-bold text-xl hover:scale-110">
+                <h1><span class="auto-text3 text-white">Image</h1>
+            </button>
+        </div>
+
+        <!-- Hiển thị ảnh theo bố cục Grid của Js -->
+        <div id="image-grid" class="grid grid-cols-1 mt-4 mx-auto max-w-[90%] gap-[30px] py-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+        </div>
+        
+        <footer class="the-end text-center bg-cyan-300 p-3">
+            <h3 class="text-xl font-bold text-red-500">TRẦN THỊ HẢI</h3>
+            <h4 class="text-xs font-bold text-red-500">YÊN THÀNH - NGHỆ AN - VIỆT NAM</h4>
+            <h4 class="text-xs font-bold text-red-500">PROPERTY OF TRAN VAN QUYEN</h4>
+            <h4 class="text-xs font-bold text-red-500 ">964.600.518</h4>
+            <p class="copy-right text-xs text-center text-red-500">&copy; 2024. Code by
+                <a href="https://www.facebook.com/tranvanquyen.01/"> Trần Văn Quyền</a>
+            </p>
+        </footer>
+        
+        <div class="back-top fixed text-[30px] bottom-[5px] right-[10px] text-white" onclick="scrollToTop()" id="backToTopBtn">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
